@@ -14,7 +14,7 @@
 @interface DynamicHeightTableViewController ()
 
 @property (nonatomic) NSInteger page;
-@property (nonatomic, strong) NSMutableArray *tableRowHeights;
+@property (nonatomic, strong) NSMutableArray *imageHeights;
 @property (nonatomic, strong) NSMutableArray *imageURLs;
 
 @end
@@ -69,7 +69,7 @@ static NSString *kStaticDropBoxURL = @"https://dl.dropboxusercontent.com/u/25733
                                        success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
                                            weakCell.mainImageView.image = image;
                                            // Update table row heights
-                                           NSInteger oldHeight = [weakSelf.tableRowHeights[indexPath.row] integerValue];
+                                           NSInteger oldHeight = [weakSelf.imageHeights[indexPath.row] integerValue];
                                            NSInteger newHeight = (int)image.size.height;
                                            
                                            if (image.size.width > CGRectGetWidth(weakCell.mainImageView.bounds)) {
@@ -79,7 +79,7 @@ static NSString *kStaticDropBoxURL = @"https://dl.dropboxusercontent.com/u/25733
                                            
                                            // Update table row height if image is in different size
                                            if (oldHeight != newHeight) {
-                                               weakSelf.tableRowHeights[indexPath.row] = @(newHeight);
+                                               weakSelf.imageHeights[indexPath.row] = @(newHeight);
                                                // Try experimenting with different ways of reloading rows.
                                                // I found that calling beginUpdates and endUpdates results in the best animation/transition when resizing rows
                                                [weakSelf.tableView beginUpdates];
@@ -96,15 +96,15 @@ static NSString *kStaticDropBoxURL = @"https://dl.dropboxusercontent.com/u/25733
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [self.tableRowHeights[indexPath.row] integerValue];
+    return [self.imageHeights[indexPath.row] integerValue];
 }
 
 #pragma mark - Updating row heights
 
 - (void)setDefaultRowHeights {
-    self.tableRowHeights = [NSMutableArray arrayWithCapacity:self.imageURLs.count];
+    self.imageHeights = [NSMutableArray arrayWithCapacity:self.imageURLs.count];
     for (int i = 0; i < self.imageURLs.count; i++) {
-        self.tableRowHeights[i] = @(self.tableView.rowHeight);
+        self.imageHeights[i] = @(self.tableView.rowHeight);
     }
 }
 
