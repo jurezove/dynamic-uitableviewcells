@@ -85,7 +85,7 @@ static NSString *kStaticDropBoxURL = @"https://dl.dropboxusercontent.com/u/25733
                                                [weakSelf.tableView beginUpdates];
                                                
                                                // No need to call reloadRowsAtIndexPaths
-                                               [weakSelf.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+//                                               [weakSelf.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
                                                [weakSelf.tableView endUpdates];
                                            }
                                        } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
