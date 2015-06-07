@@ -9,11 +9,18 @@
 /* Begin PBXBuildFile section */
 		25E2A4301B2433FF001949F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A42F1B2433FF001949F9 /* main.m */; };
 		25E2A4331B2433FF001949F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A4321B2433FF001949F9 /* AppDelegate.m */; };
-		25E2A4361B2433FF001949F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A4351B2433FF001949F9 /* ViewController.m */; };
 		25E2A4391B2433FF001949F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E2A4371B2433FF001949F9 /* Main.storyboard */; };
 		25E2A43B1B2433FF001949F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25E2A43A1B2433FF001949F9 /* Images.xcassets */; };
 		25E2A43E1B2433FF001949F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25E2A43C1B2433FF001949F9 /* LaunchScreen.xib */; };
 		25E2A44A1B2433FF001949F9 /* Dynamic_Table_View_CellsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A4491B2433FF001949F9 /* Dynamic_Table_View_CellsTests.m */; };
+		25E2A4551B243433001949F9 /* DynamicHeightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A4541B243433001949F9 /* DynamicHeightTableViewController.m */; };
+		25E2A4581B243482001949F9 /* DynamicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A4571B243482001949F9 /* DynamicTableViewCell.m */; };
+		25E2A45D1B243717001949F9 /* PhotoFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A45A1B243717001949F9 /* PhotoFetcher.m */; };
+		25E2A45E1B243717001949F9 /* FlickrAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A45C1B243717001949F9 /* FlickrAPI.m */; };
+		25E2A4671B243743001949F9 /* FlickrData.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A4621B243743001949F9 /* FlickrData.m */; };
+		25E2A4681B243743001949F9 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A4641B243743001949F9 /* Photo.m */; };
+		25E2A4691B243743001949F9 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A4661B243743001949F9 /* FlickrPhoto.m */; };
+		F9434F24372C34D36497055C /* libPods-Dynamic Table View Cells.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFD0A35EF9E40EA008F387C /* libPods-Dynamic Table View Cells.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +39,29 @@
 		25E2A42F1B2433FF001949F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		25E2A4311B2433FF001949F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		25E2A4321B2433FF001949F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		25E2A4341B2433FF001949F9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		25E2A4351B2433FF001949F9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		25E2A4381B2433FF001949F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25E2A43A1B2433FF001949F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		25E2A43D1B2433FF001949F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		25E2A4431B2433FF001949F9 /* Dynamic Table View CellsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dynamic Table View CellsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E2A4481B2433FF001949F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25E2A4491B2433FF001949F9 /* Dynamic_Table_View_CellsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dynamic_Table_View_CellsTests.m; sourceTree = "<group>"; };
+		25E2A4531B243433001949F9 /* DynamicHeightTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicHeightTableViewController.h; sourceTree = "<group>"; };
+		25E2A4541B243433001949F9 /* DynamicHeightTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicHeightTableViewController.m; sourceTree = "<group>"; };
+		25E2A4561B243482001949F9 /* DynamicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicTableViewCell.h; sourceTree = "<group>"; };
+		25E2A4571B243482001949F9 /* DynamicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTableViewCell.m; sourceTree = "<group>"; };
+		25E2A4591B243717001949F9 /* PhotoFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoFetcher.h; sourceTree = "<group>"; };
+		25E2A45A1B243717001949F9 /* PhotoFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoFetcher.m; sourceTree = "<group>"; };
+		25E2A45B1B243717001949F9 /* FlickrAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPI.h; sourceTree = "<group>"; };
+		25E2A45C1B243717001949F9 /* FlickrAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrAPI.m; sourceTree = "<group>"; };
+		25E2A4611B243743001949F9 /* FlickrData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrData.h; sourceTree = "<group>"; };
+		25E2A4621B243743001949F9 /* FlickrData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrData.m; sourceTree = "<group>"; };
+		25E2A4631B243743001949F9 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		25E2A4641B243743001949F9 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		25E2A4651B243743001949F9 /* FlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhoto.h; sourceTree = "<group>"; };
+		25E2A4661B243743001949F9 /* FlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhoto.m; sourceTree = "<group>"; };
+		317A67131CC22FC87526C44D /* Pods-Dynamic Table View Cells.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dynamic Table View Cells.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dynamic Table View Cells/Pods-Dynamic Table View Cells.debug.xcconfig"; sourceTree = "<group>"; };
+		C794A1201E1B515F56D6A516 /* Pods-Dynamic Table View Cells.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dynamic Table View Cells.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dynamic Table View Cells/Pods-Dynamic Table View Cells.release.xcconfig"; sourceTree = "<group>"; };
+		DDFD0A35EF9E40EA008F387C /* libPods-Dynamic Table View Cells.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dynamic Table View Cells.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9434F24372C34D36497055C /* libPods-Dynamic Table View Cells.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +89,8 @@
 				25E2A42C1B2433FF001949F9 /* Dynamic Table View Cells */,
 				25E2A4461B2433FF001949F9 /* Dynamic Table View CellsTests */,
 				25E2A42B1B2433FF001949F9 /* Products */,
+				3E35B605E291F05191389682 /* Pods */,
+				81BCBAF82BF272771FD74271 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +106,13 @@
 		25E2A42C1B2433FF001949F9 /* Dynamic Table View Cells */ = {
 			isa = PBXGroup;
 			children = (
+				25E2A45F1B24371A001949F9 /* Flickr API */,
 				25E2A4311B2433FF001949F9 /* AppDelegate.h */,
 				25E2A4321B2433FF001949F9 /* AppDelegate.m */,
-				25E2A4341B2433FF001949F9 /* ViewController.h */,
-				25E2A4351B2433FF001949F9 /* ViewController.m */,
+				25E2A4531B243433001949F9 /* DynamicHeightTableViewController.h */,
+				25E2A4541B243433001949F9 /* DynamicHeightTableViewController.m */,
+				25E2A4561B243482001949F9 /* DynamicTableViewCell.h */,
+				25E2A4571B243482001949F9 /* DynamicTableViewCell.m */,
 				25E2A4371B2433FF001949F9 /* Main.storyboard */,
 				25E2A43A1B2433FF001949F9 /* Images.xcassets */,
 				25E2A43C1B2433FF001949F9 /* LaunchScreen.xib */,
@@ -119,6 +147,48 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		25E2A45F1B24371A001949F9 /* Flickr API */ = {
+			isa = PBXGroup;
+			children = (
+				25E2A4601B24373D001949F9 /* Models */,
+				25E2A4591B243717001949F9 /* PhotoFetcher.h */,
+				25E2A45A1B243717001949F9 /* PhotoFetcher.m */,
+				25E2A45B1B243717001949F9 /* FlickrAPI.h */,
+				25E2A45C1B243717001949F9 /* FlickrAPI.m */,
+			);
+			name = "Flickr API";
+			sourceTree = "<group>";
+		};
+		25E2A4601B24373D001949F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				25E2A4611B243743001949F9 /* FlickrData.h */,
+				25E2A4621B243743001949F9 /* FlickrData.m */,
+				25E2A4631B243743001949F9 /* Photo.h */,
+				25E2A4641B243743001949F9 /* Photo.m */,
+				25E2A4651B243743001949F9 /* FlickrPhoto.h */,
+				25E2A4661B243743001949F9 /* FlickrPhoto.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3E35B605E291F05191389682 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				317A67131CC22FC87526C44D /* Pods-Dynamic Table View Cells.debug.xcconfig */,
+				C794A1201E1B515F56D6A516 /* Pods-Dynamic Table View Cells.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		81BCBAF82BF272771FD74271 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDFD0A35EF9E40EA008F387C /* libPods-Dynamic Table View Cells.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25E2A44D1B2433FF001949F9 /* Build configuration list for PBXNativeTarget "Dynamic Table View Cells" */;
 			buildPhases = (
+				E9472757F74F0B9E5F0BA731 /* Check Pods Manifest.lock */,
 				25E2A4261B2433FE001949F9 /* Sources */,
 				25E2A4271B2433FE001949F9 /* Frameworks */,
 				25E2A4281B2433FE001949F9 /* Resources */,
+				5CE4E3B3EAABDDBEB175968D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,14 +286,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5CE4E3B3EAABDDBEB175968D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dynamic Table View Cells/Pods-Dynamic Table View Cells-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9472757F74F0B9E5F0BA731 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		25E2A4261B2433FE001949F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25E2A4361B2433FF001949F9 /* ViewController.m in Sources */,
+				25E2A4551B243433001949F9 /* DynamicHeightTableViewController.m in Sources */,
+				25E2A4581B243482001949F9 /* DynamicTableViewCell.m in Sources */,
 				25E2A4331B2433FF001949F9 /* AppDelegate.m in Sources */,
+				25E2A45E1B243717001949F9 /* FlickrAPI.m in Sources */,
+				25E2A4681B243743001949F9 /* Photo.m in Sources */,
 				25E2A4301B2433FF001949F9 /* main.m in Sources */,
+				25E2A4691B243743001949F9 /* FlickrPhoto.m in Sources */,
+				25E2A45D1B243717001949F9 /* PhotoFetcher.m in Sources */,
+				25E2A4671B243743001949F9 /* FlickrData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +456,7 @@
 		};
 		25E2A44E1B2433FF001949F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 317A67131CC22FC87526C44D /* Pods-Dynamic Table View Cells.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Dynamic Table View Cells/Info.plist";
@@ -355,6 +467,7 @@
 		};
 		25E2A44F1B2433FF001949F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C794A1201E1B515F56D6A516 /* Pods-Dynamic Table View Cells.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Dynamic Table View Cells/Info.plist";
@@ -416,6 +529,7 @@
 				25E2A44F1B2433FF001949F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25E2A4501B2433FF001949F9 /* Build configuration list for PBXNativeTarget "Dynamic Table View CellsTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +538,7 @@
 				25E2A4521B2433FF001949F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

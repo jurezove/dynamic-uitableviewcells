@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DynamicHeightTableViewController.h
 //  Dynamic Table View Cells
 //
 //  Created by Jure Zove on 07/06/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface DynamicHeightTableViewController : UITableViewController
 
 @end
-
