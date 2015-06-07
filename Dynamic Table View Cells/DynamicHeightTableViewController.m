@@ -71,12 +71,18 @@
     __weak DynamicTableViewCell *weakCell = cell;
     __weak typeof(self) weakSelf = self;
     [cell.mainImageView setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:photo.url]]
-                              placeholderImage:nil
+                              placeholderImage:[UIImage new]
                                        success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
                                            weakCell.mainImageView.image = image;
                                            // Update table row heights
                                            NSInteger oldHeight = [weakSelf.tableRowHeights[indexPath.row] integerValue];
                                            NSInteger newHeight = (int)image.size.height;
+                                           
+                                           // Fix if image is wider than the imageview's frame
+                                           if (image.size.width > CGRectGetWidth(weakCell.mainImageView.bounds)) {
+                                               CGFloat ratio = image.size.height / image.size.width;
+                                               newHeight = CGRectGetWidth(self.view.bounds) * ratio;
+                                           }
                                            
                                            // Update table row height if image is in different size
                                            if (oldHeight != newHeight) {
