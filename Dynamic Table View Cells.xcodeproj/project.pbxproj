@@ -15,11 +15,6 @@
 		25E2A44A1B2433FF001949F9 /* Dynamic_Table_View_CellsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A4491B2433FF001949F9 /* Dynamic_Table_View_CellsTests.m */; };
 		25E2A4551B243433001949F9 /* DynamicHeightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A4541B243433001949F9 /* DynamicHeightTableViewController.m */; };
 		25E2A4581B243482001949F9 /* DynamicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A4571B243482001949F9 /* DynamicTableViewCell.m */; };
-		25E2A45D1B243717001949F9 /* PhotoFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A45A1B243717001949F9 /* PhotoFetcher.m */; };
-		25E2A45E1B243717001949F9 /* FlickrAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A45C1B243717001949F9 /* FlickrAPI.m */; };
-		25E2A4671B243743001949F9 /* FlickrData.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A4621B243743001949F9 /* FlickrData.m */; };
-		25E2A4681B243743001949F9 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A4641B243743001949F9 /* Photo.m */; };
-		25E2A4691B243743001949F9 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E2A4661B243743001949F9 /* FlickrPhoto.m */; };
 		F9434F24372C34D36497055C /* libPods-Dynamic Table View Cells.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFD0A35EF9E40EA008F387C /* libPods-Dynamic Table View Cells.a */; };
 /* End PBXBuildFile section */
 
@@ -49,16 +44,6 @@
 		25E2A4541B243433001949F9 /* DynamicHeightTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicHeightTableViewController.m; sourceTree = "<group>"; };
 		25E2A4561B243482001949F9 /* DynamicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicTableViewCell.h; sourceTree = "<group>"; };
 		25E2A4571B243482001949F9 /* DynamicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTableViewCell.m; sourceTree = "<group>"; };
-		25E2A4591B243717001949F9 /* PhotoFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoFetcher.h; sourceTree = "<group>"; };
-		25E2A45A1B243717001949F9 /* PhotoFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoFetcher.m; sourceTree = "<group>"; };
-		25E2A45B1B243717001949F9 /* FlickrAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPI.h; sourceTree = "<group>"; };
-		25E2A45C1B243717001949F9 /* FlickrAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrAPI.m; sourceTree = "<group>"; };
-		25E2A4611B243743001949F9 /* FlickrData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrData.h; sourceTree = "<group>"; };
-		25E2A4621B243743001949F9 /* FlickrData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrData.m; sourceTree = "<group>"; };
-		25E2A4631B243743001949F9 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
-		25E2A4641B243743001949F9 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
-		25E2A4651B243743001949F9 /* FlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhoto.h; sourceTree = "<group>"; };
-		25E2A4661B243743001949F9 /* FlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhoto.m; sourceTree = "<group>"; };
 		317A67131CC22FC87526C44D /* Pods-Dynamic Table View Cells.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dynamic Table View Cells.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dynamic Table View Cells/Pods-Dynamic Table View Cells.debug.xcconfig"; sourceTree = "<group>"; };
 		C794A1201E1B515F56D6A516 /* Pods-Dynamic Table View Cells.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dynamic Table View Cells.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dynamic Table View Cells/Pods-Dynamic Table View Cells.release.xcconfig"; sourceTree = "<group>"; };
 		DDFD0A35EF9E40EA008F387C /* libPods-Dynamic Table View Cells.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dynamic Table View Cells.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +91,6 @@
 		25E2A42C1B2433FF001949F9 /* Dynamic Table View Cells */ = {
 			isa = PBXGroup;
 			children = (
-				25E2A45F1B24371A001949F9 /* Flickr API */,
 				25E2A4311B2433FF001949F9 /* AppDelegate.h */,
 				25E2A4321B2433FF001949F9 /* AppDelegate.m */,
 				25E2A4531B243433001949F9 /* DynamicHeightTableViewController.h */,
@@ -145,31 +129,6 @@
 				25E2A4481B2433FF001949F9 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		25E2A45F1B24371A001949F9 /* Flickr API */ = {
-			isa = PBXGroup;
-			children = (
-				25E2A4601B24373D001949F9 /* Models */,
-				25E2A4591B243717001949F9 /* PhotoFetcher.h */,
-				25E2A45A1B243717001949F9 /* PhotoFetcher.m */,
-				25E2A45B1B243717001949F9 /* FlickrAPI.h */,
-				25E2A45C1B243717001949F9 /* FlickrAPI.m */,
-			);
-			name = "Flickr API";
-			sourceTree = "<group>";
-		};
-		25E2A4601B24373D001949F9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				25E2A4611B243743001949F9 /* FlickrData.h */,
-				25E2A4621B243743001949F9 /* FlickrData.m */,
-				25E2A4631B243743001949F9 /* Photo.h */,
-				25E2A4641B243743001949F9 /* Photo.m */,
-				25E2A4651B243743001949F9 /* FlickrPhoto.h */,
-				25E2A4661B243743001949F9 /* FlickrPhoto.m */,
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 		3E35B605E291F05191389682 /* Pods */ = {
@@ -327,12 +286,7 @@
 				25E2A4551B243433001949F9 /* DynamicHeightTableViewController.m in Sources */,
 				25E2A4581B243482001949F9 /* DynamicTableViewCell.m in Sources */,
 				25E2A4331B2433FF001949F9 /* AppDelegate.m in Sources */,
-				25E2A45E1B243717001949F9 /* FlickrAPI.m in Sources */,
-				25E2A4681B243743001949F9 /* Photo.m in Sources */,
 				25E2A4301B2433FF001949F9 /* main.m in Sources */,
-				25E2A4691B243743001949F9 /* FlickrPhoto.m in Sources */,
-				25E2A45D1B243717001949F9 /* PhotoFetcher.m in Sources */,
-				25E2A4671B243743001949F9 /* FlickrData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
