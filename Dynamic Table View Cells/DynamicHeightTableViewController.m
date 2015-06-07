@@ -61,12 +61,11 @@ static NSString *kStaticDropBoxURL = @"https://dl.dropboxusercontent.com/u/25733
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     DynamicTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DynamicCell" forIndexPath:indexPath];
-    cell.mainImageView.image = nil;
     NSString *imageURL = self.imageURLs[indexPath.row];
     __weak DynamicTableViewCell *weakCell = cell;
     __weak typeof(self) weakSelf = self;
     [cell.mainImageView setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:imageURL]]
-                              placeholderImage:nil
+                              placeholderImage:[UIImage new]
                                        success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
                                            weakCell.mainImageView.image = image;
                                            // Update table row heights
