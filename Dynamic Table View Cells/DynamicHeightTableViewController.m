@@ -40,7 +40,7 @@ static NSString *kStaticDropBoxURL = @"https://dl.dropboxusercontent.com/u/25733
     static int kNumberOfImages = 20;
     self.imageURLs = [NSMutableArray arrayWithCapacity:kNumberOfImages];
     // A set of uploaded images on my public dropbox folder
-    for (int i = 0; i <= kNumberOfImages; i++) {
+    for (int i = 0; i < kNumberOfImages; i++) {
         self.imageURLs[i] = [NSString stringWithFormat:@"%@%d.jpg", kStaticDropBoxURL, i];
     }
     
